@@ -25,12 +25,11 @@ defmodule AtomicRepro.MixProject do
   defp deps do
     [
       {:picosat_elixir, "~> 0.2"},
-      {:ash, "~> 3.0"},
-      {:ash_json_api, "~> 1.0"},
-      {:ash_oban, "~> 0.0"},
-      {:ash_postgres, "~> 2.0"},
-      # {:ash_sql, github: "ash-project/ash_sql", branch: "main", override: true},
-      {:ash_phoenix, "~> 2.0"},
+      # {:ash, "~> 3.0"},
+      {:ash, github: "ash-project/ash", branch: "main", override: true},
+      {:ash_postgres, github: "ash-project/ash_postgres", branch: "main", override: true},
+      # {:ash_postgres, "~> 2.0"},
+      {:ash_sql, github: "ash-project/ash_sql", branch: "main", override: true},
       {:ash_state_machine, "~> 0.0"},
       {:igniter, "~> 0.2"}
       # {:dep_from_hexpm, "~> 0.3.0"},
